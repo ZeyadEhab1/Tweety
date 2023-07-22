@@ -24,15 +24,19 @@
     <section class="px-8 py-4 mb-6">
         <header class="container mx-auto">
             <h1>
-                <img
-                    src="/images/logo.svg"
-                    alt="Tweety"
-                >
+                <a href="/tweets">
+                    <img
+                        src="/images/logo.svg"
+                        alt="Tweety"
+                    >
+                </a>
             </h1>
         </header>
     </section>
 
     {{ $slot }}
 </div>
+
+<script src="http://unpkg.com/turbolinks"></script>
 </body>
 </html>
