@@ -2,9 +2,10 @@
 namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Laravel\Sanctum\HasApiTokens;
 class User extends Authenticatable
 {
-    use Notifiable, Followable;
+    use Notifiable, Followable,HasApiTokens;
     /**
      * The attributes that are mass assignable.
      *

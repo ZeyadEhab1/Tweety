@@ -11,7 +11,7 @@
         <hr class="my-4">
         <footer class="flex justify-between items-center">
             <img
-                src="{{ current_user()->Avatar }}"
+                src="{{ current_user()->avatar }}"
                 alt="Your avatar"
                 class="rounded-full mr-2"
                 width="50"
