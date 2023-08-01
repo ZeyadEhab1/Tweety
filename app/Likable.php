@@ -36,7 +36,7 @@ trait Likable
     {
         return $this->hasMany(Like::class);
     }
-
+ // TODO: Use Return Types in every Method you have in the project, if you don't know what type to return, use dd
     public function dislike($user = null)
     {
         return $this->like($user, false);

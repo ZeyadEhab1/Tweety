@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 class AuthController extends Controller
 {
     public function register (Request $request) {
+        // TODO: Use a dedicated FormRequest for validation for every post/patch request
         $fields= $request->validate([
             'username' => [
                 'required',

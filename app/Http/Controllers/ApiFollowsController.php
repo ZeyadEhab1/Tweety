@@ -13,6 +13,7 @@ class ApiFollowsController extends Controller
             ->user()
             ->toggleFollow($user);
 
+        // TODO: make yourself expressive in what you return.
         return response()->json(['follow' => 'You followed'], 201);
     }
 }
