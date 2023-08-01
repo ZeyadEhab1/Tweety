@@ -41,6 +41,7 @@ class User extends Authenticatable
     public function timeline()
     {
         $friends = $this->follows()->pluck('id');
+        // TODO: Refactor all queries to a dedicated Query Builder Class
         return Tweet::whereIn('user_id', $friends)
             ->orWhere('user_id', $this->id)
             ->withLikes()

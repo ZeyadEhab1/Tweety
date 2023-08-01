@@ -15,11 +15,14 @@ use App\Tweet;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
+
+// TODO: Use new syntax for routes
 Route::post('/register','AuthController@register');
 Route::post('/login','AuthController@login');
 
 Route::group (['middleware' => ['auth:sanctum']], function(){
     Route::post('/logout','AuthController@logout');
+    // TODO: Use Route Groups to apply a prefix
     Route::get('/tweets', 'ApiTweetController@index');
     Route::post('/tweets', 'ApiTweetController@store');
 
