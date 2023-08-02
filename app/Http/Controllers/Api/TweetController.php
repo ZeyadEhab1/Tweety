@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Tweet;
 use App\User;
 
-class ApiTweetController extends Controller
+class TweetController extends Controller
 {
     /**
      * Display a listing of the resource.

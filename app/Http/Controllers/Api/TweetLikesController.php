@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
-
+namespace App\Http\Controllers\Api;
+use App\Http\Controllers\Controller;
 use App\Tweet;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class ApiTweetLikesController extends Controller
+class TweetLikesController extends Controller
 {
     public function store(Tweet $tweet)
     {

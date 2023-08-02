@@ -1,11 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
+use App\Http\Controllers\Controller;
+
 
 use App\User;
 use Illuminate\Http\Request;
 
-class ApiProfilesController extends Controller
+class ProfilesController extends Controller
 {
     public function show(User $user)
     {

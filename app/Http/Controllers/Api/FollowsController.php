@@ -1,14 +1,17 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
+use App\Http\Controllers\Controller;
+
 
 use App\User;
 use Illuminate\Http\Request;
 
-class ApiFollowsController extends Controller
+class FollowsController extends Controller
 {
     public function store (User $user)
     {
+
         auth()
             ->user()
             ->toggleFollow($user);

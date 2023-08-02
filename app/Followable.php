@@ -13,6 +13,7 @@ trait Followable
 
     public function toggleFollow(User $user)
     {
+        dd($this->follows()->where('id', 1)->get());
         $this->follows()->toggle($user);
     }
 
